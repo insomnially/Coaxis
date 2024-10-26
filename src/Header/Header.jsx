@@ -43,7 +43,7 @@ export default function Header() {
                 <nav className='navheader'>
                     <ul className='ulheader'>
                         <li className='li1'>
-                            <Link to='/'>Coaxis</Link>
+                            <Link to='/Coaxis/'>Coaxis</Link>
                         </li>
                         <li className='link-item'>
                             <Link to='/catalog'>Каталог</Link>
