@@ -46,7 +46,7 @@ export default function Header() {
                             <Link to='/Coaxis/'>Coaxis</Link>
                         </li>
                         <li className='link-item'>
-                            <Link to='/catalog'>Каталог</Link>
+                            <Link to='/Coaxis/catalog'>Каталог</Link>
                         </li>
                         {!hideAboutLinkPaths.includes(location.pathname) && (
                             <li className='link-item'>
@@ -56,10 +56,10 @@ export default function Header() {
                             </li>
                         )}
                         <li className='link-item'>
-                            <Link to='/reviews'>Отзывы</Link>
+                            <Link to='/Coaxis/reviews'>Отзывы</Link>
                         </li>
                         <li className='link-item'>
-                            <Link to='/contacts'>Контакты</Link>
+                            <Link to='/Coaxis/contacts'>Контакты</Link>
                         </li>
                         <div className='headerbutton' onClick={openModal}>
                             Заказать <span className='setup'>установку</span>
