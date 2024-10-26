@@ -10,7 +10,6 @@ import Photo3 from '../img/image3.png';
 import Photo4 from '../img/image4.png';
 import Photo5 from '../img/button.png';
 
-// Импортируйте CSS файл
 import './SecondDiv.css';
 
 export default function SecondDiv() {

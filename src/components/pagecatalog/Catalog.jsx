@@ -143,7 +143,7 @@ export default function Catalog() {
                   {product.features.map((feature, index) => (
                     <li key={index} className="feature">
                       <span className="feature-icon">
-                        {featureIcons[feature] || <FaLeaf />} {/* Default icon */}
+                        {featureIcons[feature] || <FaLeaf />}
                       </span>
                       {feature}
                     </li>
