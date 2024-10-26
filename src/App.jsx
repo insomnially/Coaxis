@@ -18,9 +18,9 @@ function AnimatedRoutes() {
             >
                 <Routes location={location}>
                     <Route path="/Coaxis" element={<MainPage />} />
-                    <Route path="/catalog" element={<Catalog />} />
-                    <Route path="/contacts" element={<Contacts />} />
-                    <Route path="/reviews" element={<Reviews />} />
+                    <Route path="/Coaxis/catalog" element={<Catalog />} />
+                    <Route path="/Coaxis/contacts" element={<Contacts />} />
+                    <Route path="/Coaxis/reviews" element={<Reviews />} />
                     
                 </Routes>
             </CSSTransition>
