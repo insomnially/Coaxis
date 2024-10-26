@@ -3,6 +3,13 @@
     margin: 0;
     scrollbar-width: thin;
     scrollbar-color: rgb(75, 74, 74) rgb(0, 0, 0);
+    color: white;
+    font-family: Jost;
+}
+
+@font-face {
+    font-family: Jost;
+    src: url(./fonts/Jost-Regular.ttf);
 }
 
 :root {
