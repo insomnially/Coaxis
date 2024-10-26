@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(75, 74, 74) rgb(0, 0, 0);
+}
+
+:root {
+    background-color:rgb(14, 14, 14);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+Link {
+    text-decoration: none;
+  }

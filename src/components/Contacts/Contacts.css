@@ -1,0 +1,38 @@
+.containercontacts {
+    width: 100%;
+    height: auto;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.iconscont {
+    display:flex;
+    gap: 25px
+}
+
+.contact1 {
+    padding: 0 50px;
+}
+.contact2 {
+    display: flex;
+    padding: 0 50px;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .containercontacts {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .iconscont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
