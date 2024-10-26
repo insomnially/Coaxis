@@ -18,7 +18,7 @@ function AnimatedRoutes() {
                 classNames="fade"
             >
                 <Routes location={location}>
-                    <Route path="/" element={<MainPage />} />
+                    <Route path="/Coaxis" element={<MainPage />} />
                     <Route path="/catalog" element={<Catalog />} />
                     <Route path="/contacts" element={<Contacts />} />
                     <Route path="/reviews" element={<Reviews />} />
