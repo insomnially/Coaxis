@@ -1,4 +1,3 @@
-import './App.css';
 import MainPage from './components/pagecatalog/MainPage/MainPage';
 import Catalog from './components/pagecatalog/Catalog';
 import Header from './Header/Header';
