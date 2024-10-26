@@ -5,7 +5,7 @@ import { Link as ScrollLink } from 'react-scroll';
 
 export default function Header() {
     const location = useLocation();
-    const hideAboutLinkPaths = ['/catalog', '/reviews', '/contacts'];
+    const hideAboutLinkPaths = ['/Coaxis/catalog', '/Coaxis/reviews', '/Coaxis/contacts'];
     const [isModalOpen, setIsModalOpen] = React.useState(false);
     const [formData, setFormData] = React.useState({
         name: '',
