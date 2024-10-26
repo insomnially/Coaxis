@@ -17,7 +17,7 @@ export default function Header() {
 
     const openModal = () => {
         setIsModalOpen(true);
-        setShowSuccessMessage(false); // Сбросить сообщение при открытии модального окна
+        setShowSuccessMessage(false);
     };
 
     const closeModal = () => {
@@ -31,10 +31,29 @@ export default function Header() {
         setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
 
-    const handleSubmit = (e) => {
+    const sendToTelegram = async (data) => {
+        const botToken = '8159457466:AAGJyfJ__07lFmnh0TW73GtGTzjdnMCpdCM';
+        const chatId = '1333493563';
+        const message = `
+            Новая заявка на установку кондиционера:
+            Имя: ${data.name}
+            Телефон: ${data.phone}
+            Тип кондиционера: ${data.airConditionerType}
+            Дата установки: ${data.installationDate}
+        `;
+
+        const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+        await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ chat_id: chatId, text: message })
+        });
+    };
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log('Отправлено:', formData); // Отправка данных на сервер
-        setShowSuccessMessage(true); // Показать сообщение об успехе
+        await sendToTelegram(formData);
+        setShowSuccessMessage(true);
     };
 
     return (
@@ -68,7 +87,6 @@ export default function Header() {
                 </nav>
             </header>
 
-            {/* Модальное окно */}
             {isModalOpen && (
                 <div className="modal-overlay" onClick={closeModal}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
