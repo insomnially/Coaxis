@@ -46,9 +46,11 @@ ul li:hover {
     margin-right: 70px;
     transition: all .4s;
     cursor: pointer;
-    &:hover {
-        opacity: 0.6;
-    }
+}
+
+.headerbutton:hover {
+    opacity: .8;
+    
 }
 
 .link-item {
@@ -73,13 +75,11 @@ ul li:hover {
         padding: 0;
     }
 
+
     .headerbutton {
-        margin-right: 0;
+        margin-right: 10px;
     }
 
-    .headerbutton .setup {
-        display: contents;
-    }
   }
 
 

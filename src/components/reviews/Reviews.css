@@ -112,8 +112,25 @@
     transition: color 0.3s;
 }
 
+.headerbutton:hover {
+    opacity: .8;
+}
+
 .star.filled {
     color: gold;
 }
 
+@media (max-width:768px) {
+    .review-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .review-text {
+        text-align: center;
+    }
+}
 

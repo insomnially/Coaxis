@@ -13,9 +13,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: row;
     max-width: 95%;
     margin: 0;
     padding: 0 100px;
+    margin-bottom: 100px;
   }
   
   .footer-section {
@@ -65,10 +67,9 @@
 
   .social-media-section {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
-  
+
+
   .social-icons a {
     color: #ffffff;
     font-size: 1.2rem;
@@ -81,7 +82,7 @@
 
   .footer-bottom {
     text-align: center;
-    padding-top: 15px;
+    padding-top: 17px;
     border-top: 1px solid #ffffff;
   }
 
@@ -104,6 +105,7 @@
     }
     .footer-section {
       margin: 10px 0;
+      align-items: center;
     }
   }
   

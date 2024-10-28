@@ -1,8 +1,11 @@
 import React from 'react';
 import './Footer.css';
 import { FaYoutube, FaGithub, FaTwitch, FaTelegram } from 'react-icons/fa';
+import { Link as ScrollLink } from 'react-scroll';
 
 export default function Footer() {
+
+  const hideAboutLinkPaths = ['/Coaxis/catalog', '/Coaxis/reviews', '/Coaxis/contacts'];
   return (
     <footer className="footer-container">
       <div className="footer-content">
@@ -14,10 +17,16 @@ export default function Footer() {
         <div className="footer-section">
           <h3>Навигация</h3>
           <ul>
-            <li><a href="#about">Каталог</a></li>
-            <li><a href="#services">О нас</a></li>
-            <li><a href="#products">Отзывы</a></li>
-            <li><a href="#contact">Контакты</a></li>
+            <li><a href="/Coaxis/catalog">Каталог</a></li>
+            {!hideAboutLinkPaths.includes(location.pathname) && (
+                            <li className='link-item'>
+                                <ScrollLink to="second-div-container" offset={85} spy={true} smooth={true} duration={150}>
+                                    О нас
+                                </ScrollLink>
+                            </li>
+                        )}
+            <li><a href="/Coaxis/reviews">Отзывы</a></li>
+            <li><a href="/Coaxis/contacts">Контакты</a></li>
           </ul>
         </div>
 

@@ -102,14 +102,17 @@
       margin: 5px 0;
     }
   
+    .block-content p {
+      text-align: left;
+    }
     .first-block,
     .second-block,
     .third-block,
     .fourth-block {
-      height: 400px;
+      height: 500px;
     }
     .third-block {
-        top: 0;
+      top: 0;
     }
   
     .block-content h2 {

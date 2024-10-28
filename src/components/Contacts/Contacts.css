@@ -1,3 +1,5 @@
+
+
 .containercontacts {
     width: 100%;
     height: auto;
@@ -13,7 +15,9 @@
 }
 
 .contact1 {
-    padding: 0 50px;
+    margin-left: 50px;
+    width: 100%;
+    
 }
 .contact2 {
     display: flex;
@@ -34,5 +38,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .contact1 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .contact2 {
+        text-align: center;
     }
 }

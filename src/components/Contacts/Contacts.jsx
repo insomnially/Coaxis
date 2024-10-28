@@ -1,10 +1,11 @@
 import React from "react";
-import { FaTelegramPlane, FaGithub, FaYoutube } from "react-icons/fa";
+import { FaTelegramPlane, FaGithub, FaYoutube, FaTwitch } from "react-icons/fa";
 import "./Contacts.css";
 import Footer from "../../Footer/Footer";
 
 export default function ContactInfo() {
   return (
+
     <div className="containercontacts">
       <div className="contact1">
         <h1 style={{ fontWeight: 500 }}>
@@ -34,7 +35,7 @@ export default function ContactInfo() {
         </p>
         
         <p style={{ paddingBottom: 10 }}>
-          Веб-сайт: <a href="https://coaxis.ru">Coaxis.ru</a> <br />
+          Веб-сайт: <a href="https://insomnially.github.io/Coaxis/">https://insomnially.github.io/Coaxis/</a> <br />
           <small>Узнайте больше о наших продуктах и услугах на официальном сайте.</small>
         </p>
 
@@ -59,6 +60,9 @@ export default function ContactInfo() {
           </a>
           <a href="https://youtube.com/your-youtube-channel" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
             <FaYoutube style={{ color: "#FF0000", fontSize: "24px" }} />
+          </a>
+          <a href="https://twitch.tv/" target="_blank" rel="noopener noreferrer" aria-label="Twitch">
+            <FaTwitch style={{ color: "#FF0000", fontSize: "24px" }} />
           </a>
         </div>
       </div>

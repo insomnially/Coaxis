@@ -16,7 +16,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    padding-top: 100px;
+    height: 70vh;
 }
 
 .condition-image {
@@ -28,6 +29,7 @@ html {
 
 .description1 {
     margin-left: 20px;
+    width: 100%;
 }
 
 .description-title {
@@ -45,6 +47,7 @@ html {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     width: 95%;
     padding: 0 30px;
     height: 25vh;
@@ -65,7 +68,9 @@ html {
 
 .info-text {
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.6;
+    width: 330px;
+    height: 130px;
 }
 
 .containermain2 {
@@ -79,7 +84,6 @@ html {
 }
 .mainimage2 {
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +97,7 @@ html {
     display: flex;
     align-self: center;
     width: 70%;
-    height: auto;
+    height: 100%;
 }
 
 .mainimage2-text {
@@ -103,34 +107,25 @@ html {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Адаптивные стили */
 @media (max-width: 768px) {
     .containermain1 {
         flex-direction: column;
-        height: 100%;
-        padding-top: 120px;
     } 
 
     .containermain1 {
         flex-direction: column;
-        height: 100%;
+        height: 80vh;
     }     
     .containermain2 {
         flex-direction: column;
-        height: 60vh;
+        height: 100vh;
     } 
-
-    .containermain2 img {
-        width: 100%;
-        object-fit: cover;
-        min-height: 60px;
-        border-radius: 40px;
-    }
     .inforow {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 90vh;
+        width: 100%;
         padding:  0;
         margin: 0;
     }
@@ -139,10 +134,12 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 0;
     }
     .mainimage2-img {
-        width: 100%;
-
+        width: 96%;
+        object-fit: cover;
+        min-height: 70vh;
     }
 
     .info-item {
@@ -152,7 +149,21 @@ html {
 
     .mainimage2-text {
         font-size: 25px;
+        text-align: center;
     }
+
+    .description1 {
+        margin: 0;
+    }
+
+    .description-title {
+        text-align: center;
+    }
+
+    .description-text {
+        text-align: center;
+    }
+
 }
 
 html {
